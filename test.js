@@ -51,3 +51,11 @@ describe('tests for checking transpose of matrix', function() {
     expect(mat2.transpose()).to.eql(diff);
   });
 });
+
+describe('tests for checking diagonal of matrix', function() {
+  var mat1 = new Matrix([1, 2], [3, 4]);
+  it('should return diagonal of 2 x 2 matrix', function() {
+    var dia = [1, 4]
+    expect(mat1.diagonal()).to.eql(dia);
+  });
+});

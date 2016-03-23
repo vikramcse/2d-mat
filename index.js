@@ -100,5 +100,24 @@
     return trans;
   };
 
+  /**
+   *  Retunrs a diagonal of current matrix.
+   *  We can get diagonal if and only if the
+   *  matrix is symmetric
+   */
+  Matrix.prototype.diagonal = function() {
+    var row = this.list.length;
+    var col = this.list[0].length;
+    var result = [];
+
+    if (row === col) {
+      for (var i = 0; i < row; i++) {
+        result.push(this.list[i][i]);
+      }
+    }
+
+    return result;
+  };
+
   module.exports = Matrix;
 })();
