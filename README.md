@@ -30,6 +30,9 @@ console.log(mat.size());
 console.log(mat.createEmpty(2, 2));
 // -> [[undefined, undefined], [undefined, undefined]]
 
+console.log(mat.diagonal());
+// -> [1, 4]
+
 mat.print();
 // - > [[1, 2],
 //      [3, 4]]
